@@ -12,6 +12,17 @@ public class Pound {
         return value;
     }
 
+    public Pence fromPoundToPence() {
+        int pence = 0;
+        int poundsAmount = this.value;
+
+        while (poundsAmount >= 0) {
+            pence += 240;
+            poundsAmount--;
+        }
+
+        return new Pence(pence);
+    }
 
 
 

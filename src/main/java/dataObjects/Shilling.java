@@ -15,4 +15,16 @@ public class Shilling {
     }
 
 
+    public Pence fromShillingToPence() {
+        int pence = 0;
+        int shillingAmount = this.value;
+
+        while (shillingAmount >= 0) {
+            pence += 240;
+            shillingAmount--;
+        }
+
+        return new Pence(pence);
+    }
+
 }
