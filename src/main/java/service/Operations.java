@@ -17,6 +17,7 @@ public class Operations implements OperationInterface {
 
     }
 
+
     @Override
     public void sum() {
 
